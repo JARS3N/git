@@ -1,0 +1,10 @@
+Package: git
+Type: Package
+Title: git
+Version: 0.1.0
+Author: me
+Maintainer: me
+Description: wrapping git commands in r functions beause  i'm terribly lazy.
+License: none
+Encoding: UTF-8
+LazyData: true
