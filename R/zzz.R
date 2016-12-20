@@ -25,3 +25,5 @@ message(paste0("Github version differs from installed version \n update",pack))
 devtools::install_github(gsub("https://github.com/","",pkg),quite = TRUE)
 }else{message(paste0("Github version is identical to installed \n no update for ",pack))}
 }
+GETS <- "https://raw.githubusercontent.com/JARS3N/git/master/DESCRIPTION"
+a <- readLines(con = GETS, warn = FALSE,n = 1)

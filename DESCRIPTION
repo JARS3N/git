@@ -8,5 +8,5 @@ Description: wrapping git commands in r functions beause  i'm terribly lazy.
 URL: https://github.com/JARS3N/git
 License: none
 LazyData: true
-  
+LastUpdate: Tue Dec 20 09:37:21 2016 
   
