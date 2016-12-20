@@ -25,8 +25,9 @@ push <- function(username,password,pkg){
 pushOriginMaster <- function(){
   system("git push origin master")
 }
-clone <- function(repo){
-  system(paste0("git clone https://github.com/",repo,".git"))
+clone <- function(usr,pkg){
+
+  system(paste0("git clone https://github.com/",file.path(usr,pkg),".git"))
 }
 
 # setwd("..")
@@ -62,4 +63,11 @@ desc[grep("Version: ",desc)] <- paste0("Version: ",revD)
 desc[grep("LastUpdate: ",desc)] <- paste0("LastUpdate: ",date())
 writeLines(desc,"DESCRIPTION")
 print(desc)
+}
+
+
+editPKG <- function(usr,pkg) {
+  clone(usr,pkg)
+  setwd(pkg)
+  shell.exec(list.files(pattern = 'Rproj'))
 }
