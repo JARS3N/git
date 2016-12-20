@@ -41,7 +41,7 @@ clone <- function(repo){
 # system('git clone https://github.com/JARS3N/git.git')
 # setwd('git')
 
-updateGithub <- function(pkg,msg="",rev = "dev"){
+updateGithub <- function(pkg,msg="", rev = "dev"){
   revision(rev)
   system("git add *")
   commit(pkg,msg)
@@ -61,4 +61,5 @@ revD <- paste(split,collapse = '.')
 desc[grep("Version: ",desc)] <- paste0("Version: ",revD)
 desc[grep("LastUpdate: ",desc)] <- paste0("LastUpdate: ",date())
 writeLines(desc,"DESCRIPTION")
+print(desc)
 }
