@@ -2,9 +2,11 @@ Package: git
 Type: Package
 Title: git
 Version: 0.1.0
-Author: me
-Maintainer: me
+Author: J.Arsenault
+Maintainer: Jars3n <JARS3N@GMAIL.COM>
 Description: wrapping git commands in r functions beause  i'm terribly lazy.
+URL: https://github.com/JARS3N/git
 License: none
-Encoding: UTF-8
 LazyData: true
+  
+  
